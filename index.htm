@@ -14,6 +14,7 @@
           .fondo{
               background-color: red;
               text-align: center;
+              height: 500px;
           }
           
           .fondo-2{
@@ -27,7 +28,9 @@
           }
           
           .borde{
-              border:1px solid black;
+              border:1px solid white;
+              height: 50px;
+              color:white;
           }
       
       </style>
@@ -44,37 +47,16 @@
 
      <div class="container">
          
-        <div class="row">
+        <div class="row fondo align-items-center justify-content-center">
+           
+            <div class="col-1 fondo-3  borde">1</div>
+            <div class="col-1  fondo-3 borde">2</div>
+            <div class="col-1  fondo-3 borde">3</div>
+            <div class="col-1  fondo-3 borde">4</div>
+            <div class="col-1  fondo-3 borde">5</div>
+            <div class="col-1 fondo-3 borde order-first">6</div>
             
-           <div class="col-sm-12 borde fondo">
-                  <p>Header</p>
-            </div>
-            
-         </div>    
-         
-         <div class="row">
-            
-           <div class="col-sm-6 col-md-3 d-none d-sm-block  borde fondo-2">
-                  <p>Izquierda</p>
-           </div>
-            
-           <div class="col-sm-6 col-md-6 borde fondo-2">
-                  <p>Contenido</p>
-            </div>
-             
-           <div class="col-sm-12 col-md-3 borde fondo-2">
-                  <p>Derecha</p>
-           </div>     
-            
-         </div>    
-         
-         <div class="row">
-            
-           <div class="col-sm-12 borde fondo-3">
-                  <p>Footer</p>
-            </div>
-            
-         </div>    
+        </div>    
             
      </div>      
       
